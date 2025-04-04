@@ -120,6 +120,11 @@ export default function Home() {
           <strong>DIGIPIN:</strong> {digipin}
         </div>
       )}
+            <footer className="text-sm align-middle text-center">
+        <p>Application by: Sumanth M, Centre of Excellence in Land Administration and Management, ATI, Mysuru</p>
+        <p>Special Thanks to: Ministry of Communications Department of Posts for providing DIGIPIN Algorithm for Implementation </p>
+        <a href="https://www.mydigipin.com/p/digipin.html">Source: DIGIPIN Documentation</a>
+      </footer>
     </main>
   );
 }
