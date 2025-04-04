@@ -19,7 +19,7 @@ export default function Home() {
 
     let row = 0, column = 0;
     let MinLat = 2.5, MaxLat = 38.50, MinLon = 63.50, MaxLon = 99.50;
-    let LatDivBy = 4, LonDivBy = 4;
+    const LatDivBy = 4, LonDivBy = 4;
     let LatDivDeg = 0, LonDivDeg = 0;
 
     if (lat < MinLat || lat > MaxLat || lon < MinLon || lon > MaxLon) {
@@ -87,7 +87,17 @@ export default function Home() {
 
   return (
     <main className="min-h-screen flex flex-col items-center justify-center p-6">
-      <h1 className="text-2xl font-bold mb-4">DIGIPIN Generator</h1>
+             <center>
+          <h1 className="text-2xl font-bold text-center leading-relaxed">
+            Centre of Excellence in Land Administration and Management
+            <br />
+            Administrative Training Institute (ATI), Mysuru, Karnataka
+            <br />
+            An Initiative of Department of Land Resources, Ministry of Rural
+            Development, Government of India
+          </h1>
+        </center><br/><br/>
+      <h1 className="text-2xl font-bold mb-4 mt-[1rem] text-amber-100">DIGIPIN Generator</h1>
       <form onSubmit={handleSubmit} className="space-y-4 w-full max-w-md">
         <input
           type="number"
@@ -120,11 +130,27 @@ export default function Home() {
           <strong>DIGIPIN:</strong> {digipin}
         </div>
       )}
-            <footer className="text-sm align-middle text-center">
-        <p>Application by: Sumanth M, Centre of Excellence in Land Administration and Management, ATI, Mysuru</p>
-        <p>Special Thanks to: Ministry of Communications Department of Posts for providing DIGIPIN Algorithm for Implementation </p>
-        <a href="https://www.mydigipin.com/p/digipin.html">Source: DIGIPIN Documentation</a>
-      </footer>
+        <footer className="text-sm text-center mt-[200px] w-full align-bottom">
+  <div className="flex flex-col sm:flex-row justify-between items-center gap-2 px-4">
+    <p>
+      Application by: Sumanth M, Centre of Excellence in Land Administration
+      and Management, ATI, Mysuru
+    </p>
+    <p>
+      Special Thanks to: Ministry of Communications Department of Posts for
+      providing DIGIPIN Algorithm for Implementation
+    </p>
+    <a
+      href="https://www.mydigipin.com/p/digipin.html"
+      className="text-blue-600 underline"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Source: DIGIPIN Documentation
+    </a>
+  </div>
+</footer>
+
     </main>
   );
 }
