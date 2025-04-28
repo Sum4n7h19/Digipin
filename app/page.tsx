@@ -110,7 +110,7 @@ export default function Home() {
         />
         <input
           type="number"
-          placeholder="Longitude  (ex:76.2344323)"
+          placeholder="Longitude  (ex:76.234432)"
           value={longitude}
           onChange={(e) => setLongitude(e.target.value)}
           step="0.000001"
