@@ -101,7 +101,7 @@ export default function Home() {
       <form onSubmit={handleSubmit} className="space-y-4 w-full max-w-md">
         <input
           type="number"
-          placeholder="Latitude"
+          placeholder="Latitude (ex: 12.776344)"
           value={latitude}
           onChange={(e) => setLatitude(e.target.value)}
           step="0.000001"
@@ -110,7 +110,7 @@ export default function Home() {
         />
         <input
           type="number"
-          placeholder="Longitude"
+          placeholder="Longitude  (ex:76.2344323)"
           value={longitude}
           onChange={(e) => setLongitude(e.target.value)}
           step="0.000001"
