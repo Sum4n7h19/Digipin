@@ -97,7 +97,7 @@ export default function Home() {
             Development, Government of India
           </h1>
         </center><br/><br/>
-      <h1 className="text-2xl font-bold mb-4 mt-[1rem] text-red-950">DIGIPIN Generator</h1>
+      <h1 className="text-2xl font-bold mb-4 mt-[1rem] text-red-800">DIGIPIN Generator</h1>
       <form onSubmit={handleSubmit} className="space-y-4 w-full max-w-md">
         <input
           type="number"
